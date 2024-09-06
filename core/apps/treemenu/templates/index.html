@@ -1,0 +1,6 @@
+{% extends 'base.html'%}
+{% load tree_menu_tags %}
+{% block body %}
+<h1>TreeMenu</h1>
+{% draw_menu 'main_menu' request.path %}
+{% endblock body %}
